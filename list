@@ -1,0 +1,21 @@
+# 多层嵌套结构遍历示例
+data = [
+    {
+        'name': 'John',
+        'age': 30,
+        'pets': ['dog', 'cat']
+    },
+    {
+        'name': 'Alice',
+        'age': 25,
+        'pets': ['rabbit']
+    }
+]
+
+for person in data:
+    print(f"Name: {person['name']}")
+    print(f"Age: {person['age']}")
+    print("Pets:")
+    for pet in person['pets']:
+        print(f"- {pet}")
+    print()
